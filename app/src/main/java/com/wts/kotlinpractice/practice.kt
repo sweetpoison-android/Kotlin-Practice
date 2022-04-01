@@ -5,11 +5,11 @@ import java.util.*
 fun main(args: Array<String>)
 {
 
-  forLoopFromStep()
+  untilInForLoop()
 }
-fun forLoopFromStep()
+fun untilInForLoop()
 {
-  for (i in 10..100 step 3)
+  for (i in 10 until 100 step 3)
   {
     println(i)
   }
