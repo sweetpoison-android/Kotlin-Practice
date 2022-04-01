@@ -5,13 +5,20 @@ import java.util.*
 fun main(args: Array<String>)
 {
 
-  untilInForLoop()
+  oddOrEvenNumber()
 }
-fun untilInForLoop()
+fun oddOrEvenNumber()
 {
-  for (i in 10 until 100 step 3)
+  for (i in 10..100)
   {
-    println(i)
+   if (i%2 == 0)
+   {
+     println("It is Even Number $i")
+   }
+    else
+   {
+     println("it is odd number $i")
+   }
   }
 
 }
