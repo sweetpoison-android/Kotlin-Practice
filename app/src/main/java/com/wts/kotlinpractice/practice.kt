@@ -1,5 +1,6 @@
 package com.wts.kotlinpractice
 
+import android.widget.Toast
 import java.util.*
 
 fun main(args: Array<String>)
@@ -22,7 +23,7 @@ fun main(args: Array<String>)
         firstNumber++
 
     }
-    println(count.toString())
+   // println(count.toString())
 }
 fun checkPrimeNumber(number:Int):Boolean
 {
