@@ -1,13 +1,29 @@
 package com.wts.kotlinpractice
 
+import android.widget.Toast
 import java.util.*
 
 fun main(args: Array<String>)
 {
+    var count:Int = 0
     var  scanner = Scanner(System.`in`)
-    println("Enter any number")
-    var number = scanner.nextInt()
-    if (checkPrimeNumber(number)) println("it is a prime number") else println("it is not a prime number")
+    println("Enter first number")
+    var firstNumber = scanner.nextInt()
+   println("Enter second number")
+    var secondNumber = scanner.nextInt()
+
+    while (firstNumber < secondNumber)
+    {
+      var primeNumber:Boolean? = checkPrimeNumber(firstNumber)
+        if (primeNumber == true)
+        {
+            println(firstNumber.toString())
+            count++
+        }
+        firstNumber++
+
+    }
+   // println(count.toString())
 }
 fun checkPrimeNumber(number:Int):Boolean
 {
